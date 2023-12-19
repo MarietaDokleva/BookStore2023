@@ -7,10 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\BookStore2023.DL\BookStore2023.DL.csproj" />
     <ProjectReference Include="..\BookStore2023.Models\BookStore2023.Models.csproj" />
   </ItemGroup>
 

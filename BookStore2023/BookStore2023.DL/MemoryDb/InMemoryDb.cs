@@ -25,5 +25,24 @@ namespace BookStore2023.DL.MemoryDb
                 Name = "Autor 3"
             }
         };
+
+        public static List<Book> Books = new List<Book>()
+        {
+            new Book()
+            {
+                Id = 1,
+                Title = "Title 1"
+            },
+            new Book()
+            {
+                Id = 2,
+                Title = "Title 2"
+            },
+            new Book()
+            {
+                Id= 3,
+                Title = "Title 3"
+            }
+        };
     }
 }
