@@ -9,6 +9,9 @@ namespace BookStore2023.BL.Interfaces
         Book GetById(int Id);
         List<Book> GetAll();
         Book? Update(Book book);
-
+        public List<Book>
+            GetAllByAuthorAfterReleaseDate(
+                int authorId,
+                DateTime afterDate);
     }
 }

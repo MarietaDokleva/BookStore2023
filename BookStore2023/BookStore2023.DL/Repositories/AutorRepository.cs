@@ -6,9 +6,9 @@ namespace BookStore2023.DL.Repositories
 {
     public class AutorRepository : IAutorRepository
     {
-        public void Add(Autor autor)
+        public void Add(Author author)
         {
-            InMemoryDb.Autors.Add(autor);
+            InMemoryDb.Autors.Add(author);
         }
 
         public void Delete(int Id)
@@ -21,25 +21,25 @@ namespace BookStore2023.DL.Repositories
             }
         }
 
-        public List<Autor> GetAll()
+        public List<Author> GetAll()
         {
             return InMemoryDb.Autors;
         }
 
-        public Autor? GetById(int Id)
+        public Author? GetById(int Id)
         {
             return InMemoryDb.Autors.FirstOrDefault(a => a.Id == Id);
         }
 
-        public Autor? Update(Autor autor)
+        public Author? Update(Author author)
         {
-            var result = GetById(autor.Id);
+            var result = GetById(author.Id);
             
             if (result != null) 
             {
                 InMemoryDb.Autors.Remove(result);
-                Add (autor);
-                return autor;
+                Add (author);
+                return author;
             }
             return null;
         }

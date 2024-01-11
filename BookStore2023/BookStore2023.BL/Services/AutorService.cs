@@ -11,9 +11,9 @@ namespace BookStore2023.BL.Services
         {
             _autorRepository = autorRepository;
         }
-        public void Add(Autor autor)
+        public void Add(Author author)
         {
-            _autorRepository.Add(autor);
+            _autorRepository.Add(author);
         }
 
         public void Delete(int Id)
@@ -21,12 +21,12 @@ namespace BookStore2023.BL.Services
             _autorRepository.Delete(Id);
         }
 
-        public List<Autor> GetAll()
+        public List<Author> GetAll()
         {
             return _autorRepository.GetAll();   
         }
 
-        public Autor? GetById(int Id)
+        public Author? GetById(int Id)
         {
            return _autorRepository.GetById(Id);
         }
@@ -36,9 +36,9 @@ namespace BookStore2023.BL.Services
             throw new NotImplementedException();
         }
 
-        public Autor? Update(Autor autor)
+        public Author? Update(Author author)
         {
-           return _autorRepository.Update(autor);
+           return _autorRepository.Update(author);
         }
     }
 }

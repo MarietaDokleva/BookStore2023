@@ -4,10 +4,10 @@ namespace BookStore2023.DL.Interfaces
 {
     public interface IAutorRepository
     {
-        void Add(Autor autor);
+        void Add(Author author);
         void Delete(int Id);
-        Autor? GetById(int Id);
-        List<Autor> GetAll();
-        Autor? Update(Autor autor);
+        Author? GetById(int Id);
+        List<Author> GetAll();
+        Author? Update(Author author);
     }
 }

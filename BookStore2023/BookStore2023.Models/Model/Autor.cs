@@ -1,6 +1,6 @@
 ﻿namespace BookStore2023.Models.Model
 {
-    public class Autor
+    public class Author
     {
         public int Id { get; set; }
         public string Name { get; set; }

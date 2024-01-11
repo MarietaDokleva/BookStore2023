@@ -13,20 +13,20 @@ namespace BookStore2023.Controllers
             _autorService = autorService;
         }
         [HttpGet]
-        public Autor? GetAutorById(int id)
+        public Author? GetAutorById(int id)
         {
             return _autorService.GetById(id);
         }
         [HttpGet(template: "GetAllAutor")]
-        public List<Autor> GetAllAutor()
+        public List<Author> GetAllAutor()
         {
             return _autorService.GetAll();
         }
 
         [HttpPost]
-        public void Add([FromBody]Autor autor)
+        public void Add([FromBody]Author author)
         {
-            _autorService.Add(autor); 
+            _autorService.Add(author); 
         }
         [HttpDelete]
         public void DeleteById(int id)

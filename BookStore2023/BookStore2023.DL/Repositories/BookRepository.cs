@@ -49,5 +49,11 @@ namespace BookStore2023.DL.Repositories
             }
             return null;
         }
+        public List<Book> GetAllByAuthor(int authorId)
+        {
+            return InMemoryDb.Books
+                .Where(b => b.AutorId == authorId)
+                .ToList();
+        }
     }
 }

@@ -9,5 +9,7 @@ namespace BookStore2023.DL.Interfaces
         Book? GetById(int Id);
         List<Book> GetAll();
         Book? Update(Book book);
+
+        List<Book> GetAllByAuthor(int authorId);
     }
 }
